@@ -2301,6 +2301,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2405,6 +2406,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -39527,6 +39530,8 @@ var render = function() {
                   _vm._v(_vm._s(equipe.name))
                 ]),
                 _vm._v(" "),
+                _c("p", [_vm._v(" " + _vm._s(equipe.nombre_de_joueurs))]),
+                _vm._v(" "),
                 _c("div", [
                   _c(
                     "button",
@@ -39702,6 +39707,10 @@ var render = function() {
               [
                 _c("a", [_vm._v(" " + _vm._s(match.equipe_a.name) + " ")]),
                 _vm._v(" "),
+                _c("p", [
+                  _vm._v(" " + _vm._s(match.equipe_a.nombre_de_joueurs) + " ")
+                ]),
+                _vm._v(" "),
                 _c(
                   "p",
                   {
@@ -39714,6 +39723,10 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("a", [_vm._v(" " + _vm._s(match.equipe_b.name) + " ")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(" " + _vm._s(match.equipe_b.nombre_de_joueurs) + " ")
+                ]),
                 _vm._v(" "),
                 _c("a", { attrs: { href: "#" } }),
                 _vm._v(" "),
