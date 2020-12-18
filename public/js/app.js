@@ -2301,6 +2301,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2405,6 +2406,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -38685,7 +38688,7 @@ var render = function() {
           "data-target": "#exampleModal"
         }
       },
-      [_vm._v("\n  Ajouter une équipe\n")]
+      [_vm._v("\n  Ajouter une équipee\n")]
     ),
     _vm._v(" "),
     _c(
@@ -38736,7 +38739,7 @@ var render = function() {
                   _c(
                     "label",
                     { staticClass: "mt-3", attrs: { for: "nombrej" } },
-                    [_vm._v("Nombre de joueurs")]
+                    [_vm._v("Nationalite de l'équipe")]
                   ),
                   _vm._v(" "),
                   _c("textarea", {
@@ -39109,7 +39112,7 @@ var render = function() {
                   _c(
                     "label",
                     { staticClass: "mt-3", attrs: { for: "nombrej" } },
-                    [_vm._v("Nombre de joueurs")]
+                    [_vm._v("Nationalite de l'équipe")]
                   ),
                   _vm._v(" "),
                   _c("textarea", {
@@ -39527,6 +39530,8 @@ var render = function() {
                   _vm._v(_vm._s(equipe.name))
                 ]),
                 _vm._v(" "),
+                _c("p", [_vm._v(" " + _vm._s(equipe.nombre_de_joueurs))]),
+                _vm._v(" "),
                 _c("div", [
                   _c(
                     "button",
@@ -39702,6 +39707,10 @@ var render = function() {
               [
                 _c("a", [_vm._v(" " + _vm._s(match.equipe_a.name) + " ")]),
                 _vm._v(" "),
+                _c("p", [
+                  _vm._v(" " + _vm._s(match.equipe_a.nombre_de_joueurs) + " ")
+                ]),
+                _vm._v(" "),
                 _c(
                   "p",
                   {
@@ -39714,6 +39723,10 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("a", [_vm._v(" " + _vm._s(match.equipe_b.name) + " ")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(" " + _vm._s(match.equipe_b.nombre_de_joueurs) + " ")
+                ]),
                 _vm._v(" "),
                 _c("a", { attrs: { href: "#" } }),
                 _vm._v(" "),
@@ -55621,8 +55634,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/AonoTestTechnique/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/AonoTestTechnique/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/AonoTT/recettage/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/AonoTT/recettage/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -7,8 +7,10 @@
             <ul class="list-group mt-3">
                 <li class="list-group-item d-flex justify-content-between align-items-center" v-for="match in matches.data" :key="match.id">
                     <a> {{ match.equipe_a.name }} </a>
+                    <p> {{ match.equipe_a.nombre_de_joueurs }} </p>
                     <p style="margin-bottom: auto; margin-top: auto;">contre</p>
                     <a> {{ match.equipe_b.name }} </a>
+                    <p> {{ match.equipe_b.nombre_de_joueurs }} </p>
                         <a href="#"></a>
                         <div>
                         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#editmatchModal" @click="getMatch(match.id)">
