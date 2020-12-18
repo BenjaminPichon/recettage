@@ -38736,7 +38736,7 @@ var render = function() {
                   _c(
                     "label",
                     { staticClass: "mt-3", attrs: { for: "nombrej" } },
-                    [_vm._v("Nombre de joueurs")]
+                    [_vm._v("Nationalite de l'équipe")]
                   ),
                   _vm._v(" "),
                   _c("textarea", {
@@ -39109,7 +39109,7 @@ var render = function() {
                   _c(
                     "label",
                     { staticClass: "mt-3", attrs: { for: "nombrej" } },
-                    [_vm._v("Nombre de joueurs")]
+                    [_vm._v("Nationalite de l'équipe")]
                   ),
                   _vm._v(" "),
                   _c("textarea", {
@@ -55621,8 +55621,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/AonoTestTechnique/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/AonoTestTechnique/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/AonoTT/recettage/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/AonoTT/recettage/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

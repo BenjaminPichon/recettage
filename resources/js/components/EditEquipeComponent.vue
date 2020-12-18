@@ -18,7 +18,7 @@
                 <div class="form-group">
                     <label for="name">Nom de l'équipe</label>
                     <textarea name="name" id="name" rows="4" class="form-control" v-model="equipeToEdit.name"></textarea>
-                    <label for="nombrej" class="mt-3">Nombre de joueurs</label>
+                    <label for="nombrej" class="mt-3">Nationalite de l'équipe</label>
                     <textarea name="nombrej" id="nombrej" rows="4" class="form-control" v-model="equipeToEdit.nombre_de_joueurs"></textarea>
                 </div>
           </form>
