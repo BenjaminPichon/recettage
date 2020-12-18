@@ -4,7 +4,7 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModal">
-  Ajouter une équipe
+  Ajouter une équipee
 </button>
 
 <!-- Modal -->

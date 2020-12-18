@@ -38688,7 +38688,7 @@ var render = function() {
           "data-target": "#exampleModal"
         }
       },
-      [_vm._v("\n  Ajouter une équipe\n")]
+      [_vm._v("\n  Ajouter une équipee\n")]
     ),
     _vm._v(" "),
     _c(
