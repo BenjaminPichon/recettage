@@ -19,7 +19,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto" style="width: 100%;
+justify-content: space-around;
+max-width: 90%;">
       <li class="nav-item active">
       <router-link to="/" class="nav-link">Accueil</router-link>
       </li>

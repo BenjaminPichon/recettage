@@ -5,13 +5,18 @@
         <!-- Button trigger modal -->
         
             <ul class="list-group mt-3">
-                <li class="list-group-item d-flex justify-content-between align-items-center" v-for="match in matches.data" :key="match.id">
-                    <a> {{ match.equipe_a.name }} </a>
-                    <p> {{ match.equipe_a.nombre_de_joueurs }} </p>
-                    <p style="margin-bottom: auto; margin-top: auto;">contre</p>
-                    <a> {{ match.equipe_b.name }} </a>
-                    <p> {{ match.equipe_b.nombre_de_joueurs }} </p>
+                <li class="list-group-item d-flex justify-content-between align-items-center img mb-2" v-for="match in matches.data" :key="match.id">
+                    <div style="display:flex; width:75%; justify-content: space-between;">
+                        <div style="display: flex; justify-content: space-between; width: 10%;">
+                    <div style="width: 40px; height: 40px; background-color: black; border-radius:20px;"></div>
+                    <a style="margin-top: auto; margin-bottom: auto;"> {{ match.equipe_a.name }} </a>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; width: 10%; margin-left:70%;">
+                    <div style="width: 40px; height: 40px; background-color: black; border-radius:20px;"></div>
+                    <a style="margin-top: auto; margin-bottom: auto;"> {{ match.equipe_b.name }} </a>
+                    </div>
                         <a href="#"></a>
+                        </div>
                         <div>
                         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#editmatchModal" @click="getMatch(match.id)">
                             Editer
@@ -26,7 +31,12 @@
                <pagination :data="matches" @pagination-change-page="getResults" class="mt-5"></pagination>
     </div>
 </template>
-
+<style scoped>
+.img {
+    background-image: url('test.jpg');
+    background-repeat: no-repeat;
+}
+</style>
 <script>
     export default {
 
