@@ -3,8 +3,8 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModal">
-  Ajouter une équipee
+<button type="button" class="btn btn-primary my-3 mt-5 mb-5" data-toggle="modal" data-target="#exampleModal" style="margin:auto; display:flex;">
+  Créer une équipe
 </button>
 
 <!-- Modal -->

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="form-row">
+        <div class="form-row mt-5" style="max-width: 50%; margin: auto;">
             <input type="text" class="form-control" @keyup="searchEquipe" v-model="q" placeholder="Rechercher une équipe...">
             </div>
 

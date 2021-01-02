@@ -1,8 +1,8 @@
 <template>
     <div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">
-  Ajouter un match
+<button type="button" class="btn btn-primary mt-5 mb-5" data-toggle="modal" data-target="#addModal" style="display:flex;margin:auto;">
+  Créer un match
 </button>
 
 <!-- Modal -->
