@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="form-row">
+        <div class="form-row mt-5" style="max-width: 50%; margin: auto;">
             <input type="text" class="form-control" @keyup="searchEquipe" v-model="q" placeholder="Rechercher une équipe...">
             </div>
 
@@ -28,6 +28,7 @@
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center" v-for="equipe in equipes.data" :key="equipe.id">
                         <a href="#">{{ equipe.name }}</a>
+                        <p> {{ equipe.nombre_de_joueurs }}</p>
                         <div>
                         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#editModal" @click="getEquipe(equipe.id)">
                             Editer

@@ -3,8 +3,8 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModal">
-  Ajouter une équipe
+<button type="button" class="btn btn-primary my-3 mt-5 mb-5" data-toggle="modal" data-target="#exampleModal" style="margin:auto; display:flex;">
+  Créer une équipe
 </button>
 
 <!-- Modal -->
@@ -24,7 +24,7 @@
                 <div class="form-group">
                     <label for="name">Nom de l'équipe</label>
                     <textarea name="name" id="name" rows="4" class="form-control" v-model="name"></textarea>
-                    <label for="nombrej" class="mt-3">Nombre de joueurs</label>
+                    <label for="nombrej" class="mt-3">Nationalite de l'équipe</label>
                     <textarea name="nombrej" id="nombrej" rows="4" class="form-control" v-model="nombre_de_joueurs"></textarea>
                 </div>
           </form>
