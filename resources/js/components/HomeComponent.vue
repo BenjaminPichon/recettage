@@ -24,7 +24,7 @@
                     cursus commodo diam vel, mi quam. Gravida at nunc sed risus
                     eget vitae, id. Lobortis rhoncus aenean.
                 </p>
-                <div class="box p-1 border-radius3">Créer une équipe</div>
+                <div class="box px-5 py-3 border-radius3">Créer une équipe</div>
             </div>
             <div class="box mt-5 p-3 border-radius2">
                 <h2>Créer un match</h2>
@@ -37,7 +37,7 @@
                     cursus commodo diam vel, mi quam. Gravida at nunc sed risus
                     eget vitae, id. Lobortis rhoncus aenean.
                 </p>
-                <div class="box p-1 border-radius4">Créer un match</div>
+                <div class="box px-5 py-3 border-radius4">Créer un match</div>
             </div>
         </div>
     </div>
@@ -56,6 +56,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #ffff;
+}
+.container {
+    height: 100vh;
+}
+.text-center {
+    color: #ff7a00;
 }
 .border-radius1 {
     border-radius: 20px 0 0 20px;
@@ -67,6 +74,7 @@ export default {
 
 .border-radius3 {
     border-radius: 10px 0 0 10px;
+    padding: 10px;
 }
 
 .border-radius4 {

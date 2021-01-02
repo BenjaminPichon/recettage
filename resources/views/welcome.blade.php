@@ -6,11 +6,16 @@
 
         <title>Laravel</title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-       
+
     </head>
+    <style>
+    #app{
+        background-color:black;
+    }
+    </style>
     <body>
         <div id="app">
-        
+
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
