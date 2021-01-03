@@ -7041,7 +7041,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.box[data-v-782dcf83] {\r\n    border: 3px solid #ff7a00;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    color: #ffff;\n}\n.container[data-v-782dcf83] {\r\n    height: 100vh;\n}\n.text-center[data-v-782dcf83] {\r\n    color: #ff7a00;\n}\n.border-radius1[data-v-782dcf83] {\r\n    border-radius: 20px 0 0 20px;\n}\n.border-radius2[data-v-782dcf83] {\r\n    border-radius: 0 20px 20px 0;\n}\n.border-radius3[data-v-782dcf83] {\r\n    border-radius: 10px 0 0 10px;\r\n    padding: 10px;\n}\n.border-radius4[data-v-782dcf83] {\r\n    border-radius: 0 10px 10px 0;\n}\n.paragraphe[data-v-782dcf83] {\r\n    max-width: 400px;\n}\r\n", ""]);
+exports.push([module.i, "\n.box[data-v-782dcf83] {\n    border: 3px solid #ff7a00;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: #ffff;\n}\n.text-center[data-v-782dcf83] {\n    color: #ff7a00;\n}\n.border-radius1[data-v-782dcf83] {\n    border-radius: 20px 0 0 20px;\n}\n.border-radius2[data-v-782dcf83] {\n    border-radius: 0 20px 20px 0;\n}\n.border-radius3[data-v-782dcf83] {\n    border-radius: 10px 0 0 10px;\n    padding: 10px;\n}\n.border-radius4[data-v-782dcf83] {\n    border-radius: 0 10px 10px 0;\n}\n.paragraphe[data-v-782dcf83] {\n    max-width: 400px;\n}\n", ""]);
 
 // exports
 
@@ -7061,7 +7061,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.img[data-v-9306403a] {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./test.jpg */ "./resources/js/components/test.jpg")) + ");\r\n    background-repeat: no-repeat;\n}\r\n", ""]);
+exports.push([module.i, "\n.img[data-v-9306403a] {\n    background-image: url(" + escape(__webpack_require__(/*! ./test.jpg */ "./resources/js/components/test.jpg")) + ");\n    background-repeat: no-repeat;\n}\n", ""]);
 
 // exports
 
@@ -56767,8 +56767,8 @@ module.exports = "/images/test.jpg?85aa4833ee52540d88e0bab5a5e8af2c";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\code\web\wamp\www\recettage\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\code\web\wamp\www\recettage\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/cours/recettage/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/cours/recettage/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

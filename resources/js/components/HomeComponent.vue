@@ -58,9 +58,7 @@ export default {
     align-items: center;
     color: #ffff;
 }
-.container {
-    height: 100vh;
-}
+
 .text-center {
     color: #ff7a00;
 }
