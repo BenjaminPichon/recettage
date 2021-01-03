@@ -1,33 +1,30 @@
 <template>
-    
+
 <div>
 
-    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal fade formpoz" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content formcreation">
       <div class="modal-header">
-        <h5 class="modal-title" id="editModalLabel">Editer l'équipe</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title titleform" id="editModalLabel">Editer l'équipe</h5>
+        <buttontype class="buttonclose" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="textclose">&times;</span>
+        </buttontype>
       </div>
       <div class="modal-body">
-        
+
 
           <form>
                 <div class="form-group">
-                    <label for="name">Nom de l'équipe</label>
-                    <textarea name="name" id="name" rows="4" class="form-control" v-model="equipeToEdit.name"></textarea>
-                    <label for="nombrej" class="mt-3">Nationalite de l'équipe</label>
-                    <textarea name="nombrej" id="nombrej" rows="4" class="form-control" v-model="equipeToEdit.nombre_de_joueurs"></textarea>
+                    <textarea name="name" id="name" rows="1" class="form-control formcontent" v-model="equipeToEdit.name" placeholder="Nom de l'équipe"></textarea>
+                    <textarea name="nombrej" id="nombrej" rows="1" class="form-control formcontent" v-model="equipeToEdit.nombre_de_joueurs" placeholder="Nationalité de l'équipe"></textarea>
                 </div>
           </form>
 
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        <button type="submit" class="btn btn-success" data-dismiss="modal" @click="update">Enregistrer</button>
+        <button type="submit" class="validation" data-dismiss="modal" @click="update">Enregistrer</button>
       </div>
     </div>
   </div>
@@ -54,3 +51,56 @@ export default {
     }
 }
 </script>
+
+<style scopped>
+    .formpoz{
+        margin-left: -20%;
+        margin-top: 10%;
+    }
+
+    .generalform{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formcreation{
+        background: black;
+        color: white;
+        width: 900px;
+        height: 500px;
+    }
+
+    .titleform{
+        color: #FF7A00;
+        font-size: 24px;
+        margin-left: 45%;
+    }
+    .buttonclose{
+        width: 30px;
+        height: 30px;
+        color: #FF7A00;
+        font-size: 24px;
+    }
+    .formcontent{
+        width: 350px;
+        height: 40px;
+        resize: none;
+        background: none;
+        border: 1px solid #FF7A00;
+        margin: 5%;
+        margin-left: 35%;
+    }
+    .formcontent::placeholder{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+    .validation{
+        width: 350px;
+        height: 40px;
+        background: none;
+        color: white;
+        border: 1px solid #FF7A00;
+        margin-right: 25%;
+    }
+</style>

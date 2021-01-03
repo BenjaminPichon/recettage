@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="form-row mt-5" style="max-width: 50%; margin: auto;">
-            <input type="text" class="form-control" @keyup="searchEquipe" v-model="q" placeholder="Rechercher une équipe...">
+            <input type="text" class="form-control search" @keyup="searchEquipe" v-model="q" placeholder="Rechercher une équipe...">
             </div>
 
 <div  v-for="equipe in equipes.data" :key="equipe.id" class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -25,8 +25,8 @@
 </div>
 
         <add-equipe @equipe-added="refresh"></add-equipe>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center" v-for="equipe in equipes.data" :key="equipe.id">
+            <ul class="list-group equipes">
+                <li class="list-group-item d-flex justify-content-between align-items-center equipe" v-for="equipe in equipes.data" :key="equipe.id">
                         <a href="#">{{ equipe.name }}</a>
                         <p> {{ equipe.nombre_de_joueurs }}</p>
                         <div>
@@ -67,7 +67,7 @@
 				.then(response => {
 					this.equipes = response.data;
 				});
-        },  
+        },
 
         getEquipe(id) {
             axios.get('http://127.0.0.1:8000/api/equipes/edit/' + id)
@@ -92,7 +92,7 @@
                 .catch(error => console.log(error));
             }
         },
-        
+
         refresh(equipes) {
             this.equipes = equipes.data
         }
@@ -103,3 +103,29 @@
         }
     }
 </script>
+
+<style scopped>
+    .search{
+        margin: 5%;
+        width: 538px;
+        height: 43px;
+        background: none;
+        border:1px solid #FF7A00;;
+    }
+    .search::placeholder{
+        color: white;
+    }
+    .equipes{
+        margin-top: 5%;
+    }
+
+    .equipe{
+        background: #54433A;
+        color: white;
+        margin: 2%;
+    }
+    .equipe a {
+        color: white;
+        text-decoration: none;
+    }
+</style>

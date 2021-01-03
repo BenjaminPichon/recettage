@@ -11,6 +11,7 @@
     <style>
     #app{
         background-color:black;
+        height: 100vh;
     }
     </style>
     <body>
