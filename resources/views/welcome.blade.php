@@ -53,29 +53,7 @@ max-width: 90%;">
 </div>
 
 
-<!-- <nav class="navbar mt-5 navbar-expand-lg navbar-light bg-black">
-  <a class="navbar-brand" href="#">
-  <img class="w-50" src="{{ asset('images/logo.png') }}"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto" style="width: 100%;
-justify-content: space-around;
-max-width: 90%;">
-      <li class="nav-item active">
-      <router-link to="/" class="nav-link text-white">Conditions d’utilisation </router-link>
-      </li>
-      <li class="nav-item">
-      <router-link to="/equipes" class="nav-link text-white">Copyright © 2020 WEBA All rights reserved</router-link>
-      </li>
-      <li class="nav-item">
-      <router-link to="/matches" class="nav-link  text-white">Politique de confidentialité </router-link>
-      </li>
-    </ul>
-  </div>
-</nav> -->
 <footer class="bg-black text-center fixed-bottom">
   <div class="container">
     <div class="d-flex py-4 text-white align-items-center justify-content-around">

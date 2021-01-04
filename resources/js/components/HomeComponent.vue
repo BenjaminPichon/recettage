@@ -24,7 +24,9 @@
                     cursus commodo diam vel, mi quam. Gravida at nunc sed risus
                     eget vitae, id. Lobortis rhoncus aenean.
                 </p>
-                <div class="box px-5 py-3 border-radius3">Créer une équipe</div>
+                <router-link to="/equipes" class="box px-5 py-3 border-radius3"
+                    >Créer une équipe</router-link
+                >
             </div>
             <div class="box mt-5 p-3 border-radius2">
                 <h2>Créer un match</h2>
@@ -37,7 +39,9 @@
                     cursus commodo diam vel, mi quam. Gravida at nunc sed risus
                     eget vitae, id. Lobortis rhoncus aenean.
                 </p>
-                <div class="box px-5 py-3 border-radius4">Créer un match</div>
+                <router-link to="/matches" class="box px-5 py-3 border-radius4"
+                    >Créer un match</router-link
+                >
             </div>
         </div>
     </div>

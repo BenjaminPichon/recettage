@@ -1957,24 +1957,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      name: '',
-      nombre_de_joueurs: ''
+      name: "",
+      nombre_de_joueurs: ""
     };
   },
   methods: {
     equipeStore: function equipeStore() {
       var _this = this;
 
-      axios.post('http://127.0.0.1:8000/api/equipesList', {
+      axios.post("http://127.0.0.1:8000/api/equipesList", {
         name: this.name,
         nombre_de_joueurs: this.nombre_de_joueurs
       }).then(function (response) {
-        return _this.$emit('equipe-added', response);
+        return _this.$emit("equipe-added", response);
       })["catch"](function (error) {
-        return console.log('Saisi Incorrect');
+        return console.log("Saisi Incorrect");
       });
     }
   }
@@ -2040,11 +2073,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      id_equipeA: '',
-      id_equipeB: '',
+      id_equipeA: "",
+      id_equipeB: "",
       equipes: []
     };
   },
@@ -2057,19 +2141,19 @@ __webpack_require__.r(__webpack_exports__);
     matchStore: function matchStore() {
       var _this = this;
 
-      axios.post('http://127.0.0.1:8000/api/matchesList', {
+      axios.post("http://127.0.0.1:8000/api/matchesList", {
         id_equipeA: this.id_equipeA,
         id_equipeB: this.id_equipeB
       }).then(function (response) {
-        return _this.$emit('match-added', response);
+        return _this.$emit("match-added", response);
       })["catch"](function (error) {
-        return console.log('Saisi Incorrect');
+        return console.log("Saisi Incorrect");
       });
     },
     getEquipes: function getEquipes() {
       var _this2 = this;
 
-      axios.get('http://127.0.0.1:8000/api/equipesList').then(function (response) {
+      axios.get("http://127.0.0.1:8000/api/equipesList").then(function (response) {
         return _this2.equipes = response.data.data;
       })["catch"](function (error) {
         return console.log(error);
@@ -2129,17 +2213,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['equipeToEdit'],
+  props: ["equipeToEdit"],
   methods: {
     update: function update() {
       var _this = this;
 
-      axios.patch('http://127.0.0.1:8000/api/equipes/edit/' + this.equipeToEdit.id, {
+      axios.patch("http://127.0.0.1:8000/api/equipes/edit/" + this.equipeToEdit.id, {
         name: this.equipeToEdit.name,
         nombre_de_joueurs: this.equipeToEdit.nombre_de_joueurs
       }).then(function (response) {
-        return _this.$emit('equipe-updated', response);
+        return _this.$emit("equipe-updated", response);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -2383,6 +2493,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -6983,7 +7097,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.creation {\n   background: none;\n   color: white;\n   border: 1px solid #FF7A00;\n   width: 350px;\n   height: 84px;\n   font-size: 24px;\n   border-radius: 20px;\n   margin-bottom: 10%;\n}\n.text-button {\n    margin-left: 22.5%;\n    margin-top: 6%;\n}\n.formpoz{\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.generalform{\n    display: flex;\n    flex-direction: row;\n}\n.formcreation{\n    background: black;\n    color: white;\n    width: 917px;\n    height: 576px;\n}\n.titleform{\n    color: #FF7A00;\n    font-size: 24px;\n    margin-left: 25%;\n}\n.buttonclose{\n    width: 30px;\n    height: 30px;\n    color: #FF7A00;\n    font-size: 24px;\n}\n.formcontent{\n    width: 350px;\n    height: 40px;\n    resize: none;\n    background: none;\n    border: 1px solid #FF7A00;\n    margin-top: 23.5%;\n    margin-left: 5%;\n}\n.formcontent::-moz-placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent:-ms-input-placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent::placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.logo{\n    width: 255px;\n    height: 255px;\n    margin-left:25%;\n    margin-top: 5%;\n    border: 1px solid #FF7A00;\n    border-radius: 100%;\n    text-align: center;\n}\n.logotext{\n    font-size: 48px;\n    margin-top: 35%;\n}\n.validation{\n    width: 350px;\n    height: 40px;\n    background: none;\n    color: white;\n    border: 1px solid #FF7A00;\n    margin-right: 25%;\n}\n", ""]);
+exports.push([module.i, "\n.creation {\n    background: none;\n    color: white;\n    border: 1px solid #ff7a00;\n    width: 350px;\n    height: 84px;\n    font-size: 24px;\n    border-radius: 20px;\n    margin-bottom: 10%;\n}\n.text-button {\n    margin-left: 22.5%;\n    margin-top: 6%;\n}\n.formpoz {\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.generalform {\n    display: flex;\n    flex-direction: row;\n}\n.formcreation {\n    border: 3px solid #ff7a00;\n    background: black;\n    color: white;\n    width: 917px;\n    height: 576px;\n}\n.titleform {\n    color: #ff7a00;\n    font-size: 24px;\n    margin-left: 25%;\n}\n.buttonclose {\n    width: 30px;\n    height: 30px;\n    color: #ff7a00;\n    font-size: 24px;\n}\n.formcontent {\n    width: 350px;\n    height: 40px;\n    resize: none;\n    background: none;\n    border: 1px solid #ff7a00;\n    margin-top: 23.5%;\n    margin-left: 5%;\n}\n.formcontent::-moz-placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent:-ms-input-placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent::placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.logo {\n    width: 255px;\n    height: 255px;\n    margin-left: 25%;\n    margin-top: 5%;\n    border: 1px solid #ff7a00;\n    border-radius: 100%;\n    text-align: center;\n}\n.logotext {\n    font-size: 48px;\n    margin-top: 35%;\n}\n.validation {\n    width: 350px;\n    height: 40px;\n    background: none;\n    color: white;\n    border: 1px solid #ff7a00;\n    margin-right: 25%;\n}\n", ""]);
 
 // exports
 
@@ -7002,7 +7116,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.creation {\n   background: none;\n   color: white;\n   border: 1px solid #FF7A00;\n   width: 350px;\n   height: 84px;\n   font-size: 24px;\n   border-radius: 20px;\n   margin-bottom: 10%;\n}\n.text-button {\n    margin-left: 22.5%;\n    margin-top: 6%;\n}\n.formpoz{\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.formcreation{\n    background: black;\n    color: white;\n    width: 917px;\n    height: 576px;\n}\n", ""]);
+exports.push([module.i, "\n.modal-footer {\n    border-top: 0;\n}\n.creation {\n    background: none;\n    color: white;\n    border: 1px solid #ff7a00;\n    width: 350px;\n    height: 84px;\n    font-size: 24px;\n    border-radius: 20px;\n    margin-bottom: 10%;\n}\n.text-button {\n    margin-left: 22.5%;\n    margin-top: 6%;\n}\n.formpoz {\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.formcreation {\n    background: black;\n    color: white;\n    width: 917px;\n    height: 576px;\n}\n.borderbox {\n    background-color: black;\n    border: 3px solid #ff7a00;\n    border-radius: 0;\n    color: white;\n}\n.borderbox2 {\n    border: 3px solid #00c2a0;\n}\n", ""]);
 
 // exports
 
@@ -7021,7 +7135,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formpoz{\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.generalform{\n    display: flex;\n    flex-direction: row;\n}\n.formcreation{\n    background: black;\n    color: white;\n    width: 900px;\n    height: 500px;\n}\n.titleform{\n    color: #FF7A00;\n    font-size: 24px;\n    margin-left: 45%;\n}\n.buttonclose{\n    width: 30px;\n    height: 30px;\n    color: #FF7A00;\n    font-size: 24px;\n}\n.formcontent{\n    width: 350px;\n    height: 40px;\n    resize: none;\n    background: none;\n    border: 1px solid #FF7A00;\n    margin: 5%;\n    margin-left: 35%;\n}\n.formcontent::-moz-placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent:-ms-input-placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent::placeholder{\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.validation{\n    width: 350px;\n    height: 40px;\n    background: none;\n    color: white;\n    border: 1px solid #FF7A00;\n    margin-right: 25%;\n}\n", ""]);
+exports.push([module.i, "\n.formpoz {\n    margin-left: -20%;\n    margin-top: 10%;\n}\n.generalform {\n    display: flex;\n    flex-direction: row;\n}\n.formcreation {\n    background: black;\n    color: white;\n    width: 900px;\n    height: 500px;\n}\n.titleform2 {\n    color: #ff7a00;\n    font-size: 24px;\n    margin-left: 45%;\n}\n.buttonclose {\n    width: 30px;\n    height: 30px;\n    color: #ff7a00;\n    font-size: 24px;\n}\n.formcontent {\n    width: 350px;\n    height: 40px;\n    resize: none;\n    background: none;\n    border: 1px solid #ff7a00;\n    margin: 5%;\n    margin-left: 35%;\n}\n.formcontent::-moz-placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent:-ms-input-placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.formcontent::placeholder {\n    color: white;\n    font-size: 24px;\n    text-align: center;\n}\n.validation {\n    width: 350px;\n    height: 40px;\n    background: none;\n    color: white;\n    border: 1px solid #ff7a00;\n    margin-right: 25%;\n}\n", ""]);
 
 // exports
 
@@ -7059,7 +7173,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.box[data-v-782dcf83] {\r\n    border: 3px solid #ff7a00;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    color: #ffff;\n}\n.text-center[data-v-782dcf83] {\r\n    color: #ff7a00;\n}\n.border-radius1[data-v-782dcf83] {\r\n    border-radius: 20px 0 0 20px;\n}\n.border-radius2[data-v-782dcf83] {\r\n    border-radius: 0 20px 20px 0;\n}\n.border-radius3[data-v-782dcf83] {\r\n    border-radius: 10px 0 0 10px;\r\n    padding: 10px;\n}\n.border-radius4[data-v-782dcf83] {\r\n    border-radius: 0 10px 10px 0;\n}\n.paragraphe[data-v-782dcf83] {\r\n    max-width: 400px;\n}\r\n", ""]);
+exports.push([module.i, "\n.box[data-v-782dcf83] {\n    border: 3px solid #ff7a00;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: #ffff;\n}\n.text-center[data-v-782dcf83] {\n    color: #ff7a00;\n}\n.border-radius1[data-v-782dcf83] {\n    border-radius: 20px 0 0 20px;\n}\n.border-radius2[data-v-782dcf83] {\n    border-radius: 0 20px 20px 0;\n}\n.border-radius3[data-v-782dcf83] {\n    border-radius: 10px 0 0 10px;\n    padding: 10px;\n}\n.border-radius4[data-v-782dcf83] {\n    border-radius: 0 10px 10px 0;\n}\n.paragraphe[data-v-782dcf83] {\n    max-width: 400px;\n}\n", ""]);
 
 // exports
 
@@ -7079,7 +7193,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.img[data-v-9306403a] {\r\n    background-image: url(" + escape(__webpack_require__(/*! ./test.jpg */ "./resources/js/components/test.jpg")) + ");\r\n    background-repeat: no-repeat;\n}\r\n", ""]);
+exports.push([module.i, "\n.img[data-v-9306403a] {\n    background-image: url(" + escape(__webpack_require__(/*! ./test.jpg */ "./resources/js/components/test.jpg")) + ");\n    background-repeat: no-repeat;\n}\n", ""]);
 
 // exports
 
@@ -39671,7 +39785,11 @@ var render = function() {
                     staticClass: "modal-title titleform",
                     attrs: { id: "exampleModalLabel" }
                   },
-                  [_vm._v("Bienvenu dans la création d'équipe")]
+                  [
+                    _vm._v(
+                      "\n                        Bienvenu dans la création d'équipe\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c(
@@ -39738,7 +39856,7 @@ var render = function() {
                       attrs: {
                         name: "nombrej",
                         id: "nombrej",
-                        placeholder: "Nationalite de l'équipe"
+                        placeholder: "Nombre de joueur"
                       },
                       domProps: { value: _vm.nombre_de_joueurs },
                       on: {
@@ -39765,7 +39883,11 @@ var render = function() {
                   attrs: { type: "submit", "data-dismiss": "modal" },
                   on: { click: _vm.equipeStore }
                 },
-                [_vm._v("Ajouter l'équipe")]
+                [
+                  _vm._v(
+                    "\n                        Ajouter l'équipe\n                    "
+                  )
+                ]
               )
             ])
           ])
@@ -39842,127 +39964,130 @@ var render = function() {
           _c("div", { staticClass: "modal-content formcreation" }, [
             _vm._m(1),
             _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "id_equipeA" } }, [
-                  _vm._v("Equipe A")
+            _c(
+              "div",
+              {
+                staticClass:
+                  "modal-body d-flex justify-content-center align-items-center"
+              },
+              [
+                _c("div", { staticClass: "form-group" }, [
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.id_equipeA,
+                          expression: "id_equipeA"
+                        }
+                      ],
+                      staticClass: "form-control borderbox",
+                      attrs: { id: "id_equipeA", name: "id_equipeA" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.id_equipeA = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "option",
+                        { attrs: { value: "", disabled: "", selected: "" } },
+                        [_vm._v("Choisir une équipe")]
+                      ),
+                      _vm._v(" "),
+                      _vm._l(_vm.equipes, function(equipe, index) {
+                        return _c(
+                          "option",
+                          {
+                            key: index,
+                            attrs: { id: equipe.id },
+                            domProps: { value: equipe.id }
+                          },
+                          [_vm._v(_vm._s(equipe.name))]
+                        )
+                      })
+                    ],
+                    2
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.id_equipeA,
-                        expression: "id_equipeA"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { id: "id_equipeA", name: "id_equipeA" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.id_equipeA = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "option",
-                      { attrs: { value: "", disabled: "", selected: "" } },
-                      [_vm._v("Sélectionner une équipe...")]
-                    ),
-                    _vm._v(" "),
-                    _vm._l(_vm.equipes, function(equipe, index) {
-                      return _c(
-                        "option",
-                        {
-                          key: index,
-                          attrs: { id: equipe.id },
-                          domProps: { value: equipe.id }
-                        },
-                        [_vm._v(_vm._s(equipe.name))]
-                      )
-                    })
-                  ],
-                  2
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "id_equipeB" } }, [
-                  _vm._v("Equipe B")
+                _c("p", { staticStyle: { "font-size": "30px" } }, [
+                  _vm._v("VS")
                 ]),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.id_equipeB,
-                        expression: "id_equipeB"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { id: "id_equipeB", name: "id_equipeB" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.id_equipeB = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "option",
-                      { attrs: { value: "", disabled: "", selected: "" } },
-                      [_vm._v("Sélectionner une équipe...")]
-                    ),
-                    _vm._v(" "),
-                    _vm._l(_vm.equipes, function(equipe, index) {
-                      return _c(
-                        "option",
+                _c("div", { staticClass: "form-group" }, [
+                  _c(
+                    "select",
+                    {
+                      directives: [
                         {
-                          key: index,
-                          attrs: { id: equipe.id },
-                          domProps: { value: equipe.id }
-                        },
-                        [_vm._v(_vm._s(equipe.name))]
-                      )
-                    })
-                  ],
-                  2
-                )
-              ])
-            ]),
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.id_equipeB,
+                          expression: "id_equipeB"
+                        }
+                      ],
+                      staticClass: "form-control borderbox borderbox2 ",
+                      attrs: { id: "id_equipeB", name: "id_equipeB" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.id_equipeB = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "option",
+                        { attrs: { value: "", disabled: "", selected: "" } },
+                        [_vm._v("Choisir une équipe")]
+                      ),
+                      _vm._v(" "),
+                      _vm._l(_vm.equipes, function(equipe, index) {
+                        return _c(
+                          "option",
+                          {
+                            key: index,
+                            attrs: { id: equipe.id },
+                            domProps: { value: equipe.id }
+                          },
+                          [_vm._v(_vm._s(equipe.name))]
+                        )
+                      })
+                    ],
+                    2
+                  )
+                ])
+              ]
+            ),
             _vm._v(" "),
             _c("div", { staticClass: "modal-footer" }, [
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-success",
+                  staticClass: "validation",
                   attrs: {
                     type: "submit",
                     disabled: _vm.checkEquipeId,
@@ -39970,7 +40095,11 @@ var render = function() {
                   },
                   on: { click: _vm.matchStore }
                 },
-                [_vm._v("Ajouter un match")]
+                [
+                  _vm._v(
+                    "\n                        Ajouter un match\n                    "
+                  )
+                ]
               )
             ])
           ])
@@ -40003,9 +40132,18 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "modal-header" }, [
-      _c("h5", { staticClass: "modal-title", attrs: { id: "addModalLabel" } }, [
-        _vm._v("Modal title")
-      ]),
+      _c(
+        "h5",
+        {
+          staticClass: "modal-title titleform",
+          attrs: { id: "exampleModalLabel" }
+        },
+        [
+          _vm._v(
+            "\n                        Bienvenue dans la création d’un match\n                    "
+          )
+        ]
+      ),
       _vm._v(" "),
       _c(
         "button",
@@ -40065,10 +40203,14 @@ var render = function() {
                 _c(
                   "h5",
                   {
-                    staticClass: "modal-title titleform",
+                    staticClass: "modal-title titleform2",
                     attrs: { id: "editModalLabel" }
                   },
-                  [_vm._v("Editer l'équipe")]
+                  [
+                    _vm._v(
+                      "\n                        Editer l'équipe\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c(
@@ -40164,7 +40306,11 @@ var render = function() {
                   attrs: { type: "submit", "data-dismiss": "modal" },
                   on: { click: _vm.update }
                 },
-                [_vm._v("Enregistrer")]
+                [
+                  _vm._v(
+                    "\n                        Enregistrer\n                    "
+                  )
+                ]
               )
             ])
           ])
@@ -40642,22 +40788,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("p", { staticClass: "text-center mt-5" }, [
-        _vm._v(
-          "\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor\n        accumsan arcu in urna, tempus tristique. Egestas sed neque a sed\n        nulla in. Accumsan, hendrerit leo, a tristique at eleifend. A, dui\n        nibh et nisl. Enim arcu nisl convallis arcu volutpat, elementum et\n        nisi, est. Urna, venenatis, aliquam viverra cras tempus, nisi vel\n        auctor velit. Nisi, molestie nec est a. Donec neque id quis eget\n        purus natoque amet iaculis sapien. Risus nunc, molestie maecenas\n        aliquam sed quam. Proin libero nibh dictumst cras. Non malesuada sed\n        odio porttitor. Diam neque nascetur tempor suspendisse nibh massa\n        leo.\n    "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "d-flex justify-content-around" }, [
-        _c("div", { staticClass: "box mt-5 p-3 border-radius1" }, [
+  return _c("div", { staticClass: "container" }, [
+    _c("p", { staticClass: "text-center mt-5" }, [
+      _vm._v(
+        "\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor\n        accumsan arcu in urna, tempus tristique. Egestas sed neque a sed\n        nulla in. Accumsan, hendrerit leo, a tristique at eleifend. A, dui\n        nibh et nisl. Enim arcu nisl convallis arcu volutpat, elementum et\n        nisi, est. Urna, venenatis, aliquam viverra cras tempus, nisi vel\n        auctor velit. Nisi, molestie nec est a. Donec neque id quis eget\n        purus natoque amet iaculis sapien. Risus nunc, molestie maecenas\n        aliquam sed quam. Proin libero nibh dictumst cras. Non malesuada sed\n        odio porttitor. Diam neque nascetur tempor suspendisse nibh massa\n        leo.\n    "
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "d-flex justify-content-around" }, [
+      _c(
+        "div",
+        { staticClass: "box mt-5 p-3 border-radius1" },
+        [
           _c("h2", [_vm._v("Créer une équipe")]),
           _vm._v(" "),
           _c("p", { staticClass: "paragraphe" }, [
@@ -40666,12 +40808,22 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "box px-5 py-3 border-radius3" }, [
-            _vm._v("Créer une équipe")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "box mt-5 p-3 border-radius2" }, [
+          _c(
+            "router-link",
+            {
+              staticClass: "box px-5 py-3 border-radius3",
+              attrs: { to: "/equipes" }
+            },
+            [_vm._v("Créer une équipe")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "box mt-5 p-3 border-radius2" },
+        [
           _c("h2", [_vm._v("Créer un match")]),
           _vm._v(" "),
           _c("p", { staticClass: "paragraphe" }, [
@@ -40680,14 +40832,21 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "box px-5 py-3 border-radius4" }, [
-            _vm._v("Créer un match")
-          ])
-        ])
-      ])
+          _c(
+            "router-link",
+            {
+              staticClass: "box px-5 py-3 border-radius4",
+              attrs: { to: "/matches" }
+            },
+            [_vm._v("Créer un match")]
+          )
+        ],
+        1
+      )
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -56830,8 +56989,8 @@ module.exports = "/images/test.jpg?85aa4833ee52540d88e0bab5a5e8af2c";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\code\web\wamp\www\recettage\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\code\web\wamp\www\recettage\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/cours/recettage/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/cours/recettage/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
