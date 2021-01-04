@@ -1,14 +1,14 @@
 <template>
     <div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary mt-5 mb-5" data-toggle="modal" data-target="#addModal" style="display:flex;margin:auto;">
-  Créer un match
+<button type="button" class="mt-5 creation" data-toggle="modal" data-target="#addModal" style="display:flex;margin:auto;">
+  <p class="text-button">Créer un match</p>
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+<div class="modal fade formpoz" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content formcreation">
       <div class="modal-header">
         <h5 class="modal-title" id="addModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -16,7 +16,7 @@
         </button>
       </div>
       <div class="modal-body">
-        
+
 
           <div class="form-group">
     <label for="id_equipeA">Equipe A</label>
@@ -39,7 +39,6 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="submit" :disabled="checkEquipeId" class="btn btn-success" data-dismiss="modal" @click="matchStore">Ajouter un match</button>
       </div>
     </div>
@@ -84,3 +83,30 @@ export default {
 
 
 </script>
+
+<style scopped>
+    .creation {
+       background: none;
+       color: white;
+       border: 1px solid #FF7A00;
+       width: 350px;
+       height: 84px;
+       font-size: 24px;
+       border-radius: 20px;
+       margin-bottom: 10%;
+    }
+    .text-button {
+        margin-left: 22.5%;
+        margin-top: 6%;
+    }
+    .formpoz{
+        margin-left: -20%;
+        margin-top: 10%;
+    }
+    .formcreation{
+        background: black;
+        color: white;
+        width: 917px;
+        height: 576px;
+    }
+</style>
